@@ -11,6 +11,47 @@ https://www.youtube.com/watch?v=WP5p4QEqLLQ&list=PLAgbpJQADBGLo24x_xBwGtTDO-bjwr
 
 <br>
 
+Para clonar este repositório:
+```
+git clone https://github.com/keilapassos/orientacao-a-objetos-python
+```
+
+Após clonar e entrar no diretório do projeto, crie um ambiente virtual e entre nele
+
+```
+python -m venv venv --upgrade-deps
+```
+
+```
+source venv/bin/activate
+```
+
+
+Já dentro do seu ambiente virtual, instale as dependências do projeto:
+
+```
+pip install -r requirements.txt
+```
+
+<br>
+
+Para alguns arquivos, você pode usar o shell do python para praticar. Para isso, no seu terminal digite <strong>python</strong> e faça suas operações.
+Exemplo de código utilizando o shell do python - usando arquivo pessoa.py:
+
+```
+>>> from pessoa import Pessoa
+>>> keila = Pessoa('Keila', 27, 123456789)
+>>> keila.beber('coca-cola')
+Bebendo coca-cola
+>>> keila.beber('vinho')
+Apresente o cpf
+123456789
+>>> exit()
+```
+
+
+<br>
+
 Os arquivos <i>pessoa.py</i> e <i>calculadora.py</i> tratam sobre Encapsulamento Privado, possui exemplos de atributos e de métodos privados.
 
 vídeo base:
@@ -27,7 +68,7 @@ Neste exemplo refatoramos uma classe que possui muitos funcionamentos 'encapsula
 Com a refatoração, apesar de uma quantidade maior de código, temos uma estrutura mais legível do código, e sua manutenção se torna mais fácil também, pois caso precise de alguma alteração dentro da classe, é só ir direto ao método e modificá-lo.
 
 
-Com este exemplo de classe além do princípio citado acima, aprendi também sobre o <i> isinstance(item, tipo) </i> que retorna True se o item especificado é do mesmo tipo especificado, caso contrário ele retora False.
+Com este exemplo de classe além do princípio citado acima, aprendi também sobre o <i> isinstance(item, tipo) </i> que retorna True se o item especificado é do mesmo tipo especificado, caso contrário ele retorna False.
 O isinstance não se limita a apenas um tipo, ele pode ser usado para verificar se um item está dentro de alguns tipos, por exemplo:
 
 <br>
@@ -47,8 +88,8 @@ https://www.youtube.com/watch?v=CM-JPix8hcI&list=PLAgbpJQADBGLo24x_xBwGtTDO-bjwr
 <br><br>
 
 Neste projeto utilizei o pre-commit para padronizar todos os arquivos antes de fazer o commit.
+Caso queira utilizá-lo em outros projetos, abaixo um passo-a-passo de como utilizei ele:
 
-passo a passo que utilizei para ele:
 1. instalar o pre-commit
 ```
 pip install pre-commit
@@ -94,6 +135,7 @@ pre-commit install
 <br>
 
 
+Para rodar o pre-commit em todos os arquivos adicionados:
 ```
 pre-commit run --all-files
 ```
