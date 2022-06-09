@@ -19,6 +19,6 @@ class Pessoa:
         print(self.__cpf)
 
 
-ronaldo = Pessoa("Ronaldo", 32, "fd4gf5gd4gf")
-ronaldo.beber("coca-cola")
-ronaldo.beber("Tequila")
+# ronaldo = Pessoa("Ronaldo", 32, "fd4gf5gd4gf")
+# ronaldo.beber("coca-cola")
+# ronaldo.beber("Tequila")
