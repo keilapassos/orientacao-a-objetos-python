@@ -14,17 +14,15 @@ class Calculadora:
         return f"Resultado da subtração: {num1 - num2}"
 
 
-calculadora = Calculadora()  # sem argumentos pois não tem o __init__
-resultado = calculadora.calcular("+", 2, 2)
-print(resultado)
+# calculadora = Calculadora()  # sem argumentos pois não tem o __init__
+# resultado = calculadora.calcular("+", 2, 2)
+# print(resultado)
 
-resultado = calculadora.calcular("-", 2, 2)
-print(resultado)
+# resultado = calculadora.calcular("-", 2, 2)
+# print(resultado)
 
-resultado = calculadora.calcular("/", 2, 2)
-print(resultado)
+# resultado = calculadora.calcular("/", 2, 2)
+# print(resultado)
 
-resultado = calculadora.calcular("*", 2, 2)
-print(resultado)
-
+# resultado = calculadora.calcular("*", 2, 2)
 # print(resultado)
